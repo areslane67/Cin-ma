@@ -54,7 +54,10 @@ header h1{
     padding-right: 4rem;
     margin-left: 4rem;
     border: .2rem solid;
-    border-color: black;
+    border-color: #f3d564;
+    border-radius: 0.4rem;
+    background-color: #f3d564;
+    color: #000;
 }
 h2{
     padding-top: 8rem;
@@ -81,13 +84,16 @@ section ul{
 }
 
 .button{
-    background-color: cadetblue;
+    background-color: #f3d564;
     color: white;
     display: block;
     padding: 1rem 7rem 1rem;   
     margin: 1rem auto;
-    max-width: 90rem ;
+    max-width: 40rem ;
     cursor: pointer;
+    text-align: center;
+    border-radius: 0.4rem;
+    color: #000;
 }
 footer{
     text-align: center;

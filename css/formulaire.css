@@ -4,10 +4,13 @@
 html{
     font-size:62.5%;
     scroll-behavior:smooth;
+    background: #474954;
 }
 body{
     font: 1.6rem 'Montserrat', sans-serif;
-    margin:0
+    margin: 0;
+    line-height: 1.6;
+    color: #fff;
 }
 section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
     margin:0;
@@ -26,11 +29,21 @@ button{
     border:0;
     background-color:transparent;
 }
+img{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
 /*start*/
 header{
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+}
+header img{
+    max-width: 20rem;
 }
 header h1{
     display: flex;
@@ -40,7 +53,10 @@ header h1{
     padding-right: 4rem;
     margin-left: 4rem;
     border: .2rem solid;
-    border-color: black;
+    border-color: #f3d564;
+    border-radius: 0.4rem;
+    background-color: #f3d564;
+    color: #000;
 }
 h3{
     padding-top: 8rem;
@@ -52,17 +68,15 @@ section ul{
     padding-top: 4rem;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    max-width: 65rem;
+    max-width: 80rem;
     margin: auto;
+    gap: 1rem;
     padding-bottom: 8rem;
 }
-section ul li{
-    margin: auto;
-}
+
 form{
     display: grid;
     margin: auto;
-    width: 100rem;
     padding-bottom: 2rem;
 
 }
@@ -79,13 +93,16 @@ input{
     border-radius: .4rem;
 }
 .button{
-    background-color: cadetblue;
+    background-color: #f3d564;
     color: white;
     display: block;
     padding: 1rem 7rem 1rem;   
     margin: 1rem auto;
-    max-width: 90rem ;
+    max-width: 40rem ;
     cursor: pointer;
+    text-align: center;
+    border-radius: 0.4rem;
+    color: #000;
 }
 footer{
     text-align: center;
