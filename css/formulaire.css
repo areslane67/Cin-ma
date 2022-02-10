@@ -1,0 +1,92 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap%27');
+
+html{
+    font-size:62.5%;
+    scroll-behavior:smooth;
+}
+body{
+    font: 1.6rem 'Montserrat', sans-serif;
+    margin:0
+}
+section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+*{ 
+    box-sizing:border-box;
+}
+button{
+    padding:0;
+    border:0;
+    background-color:transparent;
+}
+/*start*/
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: 4rem;
+    border: .2rem solid;
+    border-color: black;
+}
+h3{
+    padding-top: 8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+section ul{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    max-width: 65rem;
+    margin: auto;
+    padding-bottom: 8rem;
+}
+section ul li{
+    margin: auto;
+}
+form{
+    display: grid;
+    margin: auto;
+    width: 100rem;
+    padding-bottom: 2rem;
+
+}
+label,select{
+    margin: 2rem auto;
+    width: 50rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+input{
+    width: 50rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: .4rem;
+}
+.button{
+    background-color: cadetblue;
+    color: white;
+    display: block;
+    padding: 1rem 7rem 1rem;   
+    margin: 1rem auto;
+    max-width: 90rem ;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+}

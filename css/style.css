@@ -1,0 +1,94 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap%27');
+
+html{
+    font-size:62.5%;
+    scroll-behavior:smooth;
+    background: #474954;
+}
+body{
+    font: 1.6rem 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #fff;
+}
+section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    color:#000;
+    text-decoration:none;
+}
+*{ 
+    box-sizing:border-box;
+}
+button{
+    padding:0;
+    border:0;
+    background-color:transparent;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/*start*/
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+header img{
+    max-width: 20rem;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: 4rem;
+    border: .2rem solid;
+    border-color: black;
+}
+h2{
+    padding-top: 8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#ecriture{
+    border: .2rem solid; 
+    max-width: 70rem;
+    padding: 4rem;
+    margin: auto;
+}
+p{
+    text-align: center;
+}
+section ul{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    max-width: 80rem;
+    margin: auto;
+    gap: 1rem;
+    padding-bottom: 8rem;
+}
+
+.button{
+    background-color: cadetblue;
+    color: white;
+    display: block;
+    padding: 1rem 7rem 1rem;   
+    margin: 1rem auto;
+    max-width: 90rem ;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+}
