@@ -1,5 +1,5 @@
 /* reset */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
 
 html{
     font-size:62.5%;
@@ -29,34 +29,36 @@ button{
     border:0;
     background-color:transparent;
 }
-img{
+#ok{
     display: inline-block;
     width: 100%;
     height:100%;
     vertical-align: middle;
     object-fit: cover;
 }
+
 /*start*/
 header{
     display: flex;
+    text-align: center;
+    align-items: center;
     justify-content: center;
+    margin: auto;
     padding-top: 2rem;
 }
-header img{
-    max-width: 20rem;
+#wb{
+    max-width: 15rem;
 }
 header h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-left: 4rem;
+    padding: 2rem 0;
+    margin-left: 3rem;
     border: .2rem solid;
     border-color: #f3d564;
     border-radius: 0.4rem;
     background-color: #f3d564;
     color: #000;
+    width: 70rem;
+    font-weight: 600;
 }
 h3{
     padding-top: 8rem;
@@ -81,9 +83,9 @@ form{
 
 }
 label,select{
-    margin: 2rem auto;
+    margin: 0rem auto;
     width: 50rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
 }
 input{
