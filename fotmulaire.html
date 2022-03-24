@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/formulaire.css">
     <title>Formulaire</title>
 </head>
@@ -13,29 +14,136 @@
         <img src="./assets/warner-bros-online-logo-png-transparent.png" alt="" id="wb">
         <h1>Films, séries TV et bien plus en illimité.</h1>
     </header>
+    <main>
     <section>
-        <ul>
-            <li><img src="./assets/4.jpg" alt="" id="ok"></li>
-            <li><img src="./assets/8.jpg" alt="" id="ok"></li>
-            <li><img src="./assets/9.jpg" alt="" id="ok"></li>
-            <li><img src="./assets/1.jpg" alt="" id="ok"></li>
-            <li><img src="./assets/14.jpg" alt="" id="ok"></li>
+        <ul class="grid-picture-large">
+            <li 
+            data-image="./assets/1.jpg" 
+            data-title="la belle et la bete" 
+            data-description="c'est un film épatant, entre action et émotion..." 
+            data-dates="02/01/2020">
+                <figure>
+                    <img src="./assets/1.jpg" alt="" class="ok">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">
+                                    pages
+                                </i>
+                                Agrandir
+                                    
+                            </h2>
+                        </figcaption>
+                    
+                </figure>
+            </li>
+            <li 
+            data-image="./assets/8.jpg" 
+            data-title="Rampage" 
+            data-description="c'est un film épatant, entre action et émotion..." 
+            data-dates="02/01/2020">
+                <figure>
+                    <img src="./assets/8.jpg" alt="" class="ok">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">
+                                    pages
+                                </i>
+                                Agrandir
+                                    
+                            </h2>
+                        </figcaption>
+                    
+                </figure>
+            </li>
+            <li 
+            data-image="./assets/9.jpg" 
+            data-title="Avengers" 
+            data-description="c'est un film épatant, entre action et émotion..." 
+            data-dates="02/01/2020">
+                <figure>
+                    <img src="./assets/9.jpg" alt="" class="ok">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">
+                                    pages
+                                </i>
+                                Agrandir
+                                    
+                            </h2>
+                        </figcaption>
+                    
+                </figure>
+            </li>
+            <li 
+            data-image="./assets/4.jpg" 
+            data-title="A whisker away" 
+            data-description="c'est un film épatant, entre action et émotion..." 
+            data-dates="02/01/2020">
+                <figure>
+                    <img src="./assets/4.jpg" alt="" class="ok">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">
+                                    pages
+                                </i>
+                                Agrandir
+                                    
+                            </h2>
+                        </figcaption>
+                    
+                </figure>
+            </li>
+            <li 
+            data-image="./assets/14.jpg" 
+            data-title="IT" 
+            data-description="c'est un film épatant, entre action et émotion..." 
+            data-dates="02/01/2020">
+                <figure>
+                    <img src="./assets/14.jpg" alt="" class="ok">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">
+                                    pages
+                                </i>
+                                Agrandir
+                                    
+                            </h2>
+                        </figcaption>
+                    
+                </figure>
+            </li>
         </ul>
     </section>
-    <h3>Remplissez le formulaire</h3>
-    <form action="">
+    <!-- modale -->
+    <div class="parent-modale" role="dialog">
+        <figure class="modale">
+            <button aria-label="closed">
+                <span class="material-icons">clear</span>
+            </button>
+            <img src="https://via.placeholder.com/500" alt="picture">
+            <figcaption class="desc">
+                <h3>title</h3>
+                <p>
+                   
+                </p>
+                <time>Years : </time>
+            </figcaption>
+        </figure>
+    </div>
+    <h2>Remplissez le formulaire</h2>
+    <form>
         <label>Nom:
-            <input type="texte" name="Nom" id="Nom" placeholder="Nom">
+            <input name="Nom" placeholder="Nom">
         </label>
         <label>Prénom:
-            <input type="texte" name="Nom" id="Nom" placeholder="Prénpom">
+            <input name="Nom" placeholder="Prénom">
         </label>
         <label>E-mail:
-            <input type="texte" name="Nom" id="Nom" placeholder="E-mail">
+            <input name="Nom" placeholder="E-mail">
         </label>
 
 <label>Ville:
-<select name="Ville" id="Ville" >
+<select name="Ville" >
     <option value="Paris">Paris</option>
     <option value="Bruxelles">Bruxelles</option>
     <option value="Alger">Alger</option>
@@ -47,7 +155,7 @@
 </label>
 
 <label>Pays:
-<select name="pays" id="pays">
+<select name="pays">
     <option value="l'Algérie ">l'Algérie </option>
     <option value="Allemagne ">Allemagne </option>
     <option value="france">france</option>
@@ -60,6 +168,8 @@
 
     </form>
     <a href="#" class="button">Cliquez ici pour commencer</a>
+</main>
     <footer>@ - areslane - 2022</footer>
+    <script src="./js/app.js"></script>
 </body>
 </html>
