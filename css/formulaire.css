@@ -38,6 +38,7 @@ ul li img{
 }
 
 /*start*/
+
 header{
     display: flex;
     text-align: center;
@@ -45,13 +46,6 @@ header{
     justify-content: center;
     margin: auto;
     padding-top: 2rem;
-}
-@media screen and (max-width: 60rem){
-    header{
-        font-size: 1.2rem;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 #wb{
     max-width: 15rem;
@@ -132,7 +126,11 @@ img{
     vertical-align: middle;
     object-fit: cover;
 }
-
+section ul li img{
+    border: .2rem solid;
+    border-color: white;
+    border-radius: .5rem;
+}
 ul figure{
     position: relative;
 }
@@ -143,7 +141,9 @@ span.material-icons{
     background-color: white;
     border-radius: 1rem;
 }
+
 /* Overley effect */
+
 ul figure figcaption{
     display: grid;
     position: absolute;
@@ -160,11 +160,14 @@ ul figure figcaption{
     cursor: pointer;
     color: #fff;
     text-align: center;
+    border-radius: .5rem;
 }
 ul figure:hover figcaption{
     transform: scale(1);
 }
+
 /* modale */
+
 .parent-modale{
     position: fixed;
     top: 0;
@@ -177,7 +180,7 @@ ul figure:hover figcaption{
     transition: all 0.4s ease-in-out;
 }
 .parent-modale .modale{
-    max-width: 40rem;
+    max-width: 30rem;
     padding: 1rem;
     position: fixed;
     top: 50%;
@@ -187,6 +190,9 @@ ul figure:hover figcaption{
     box-shadow: 0 0 1rem rgba(0,0,0,0.6);
     z-index: 2;
     cursor: pointer;
+}
+.parent-modale .modale img{
+    width: 100%;
 }
 .parent-modale .modale .desc{
     position: static;
@@ -218,4 +224,39 @@ ul figure:hover figcaption{
     z-index: 2;
     color: #333;
     cursor: pointer;
+}
+
+/* reset */
+
+@media screen and (max-width: 50rem){
+    header{
+        font-size: 1.2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    section ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    header h1{
+        width: 100%;
+        margin: 0rem ;
+    }
+    .parent-modale .modale{
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 35rem){
+    section ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 25rem){
+    section ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
