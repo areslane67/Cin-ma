@@ -44,18 +44,20 @@ header{
     text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin: auto;
     padding-top: 2rem;
 }
-header a.connex{
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section a{
+    margin-left: 2rem;
     background-color: #f3d564;
-    margin: 2rem;
     padding: 1rem;
     border-radius: 1rem;
-}
-main section h2{
-    text-align: center;
-    margin: 5rem 0rem;
 }
 #wb{
     max-width: 15rem;
@@ -71,23 +73,14 @@ header h1{
     width: 70rem;
     font-weight: 600;
 }
-h2.ex{
+h3{
     padding-top: 8rem;
     text-align: center;
     padding-bottom: 1rem;
 }
-h3{
+h2{
     text-align: center;
-}
-#ecriture{
-    border: .2rem solid transparent;
-    background-color: #222; 
-    max-width: 70rem;
-    padding: 4rem;
-    margin: auto;
-}
-p{
-    text-align: center;
+    margin-top: 4rem
 }
 section ul{
     padding-top: 4rem;
@@ -99,6 +92,24 @@ section ul{
     padding-bottom: 8rem;
 }
 
+form{
+    display: grid;
+    margin: auto;
+    padding-bottom: 2rem;
+
+}
+label,select{
+    margin: 0rem auto;
+    width: 50rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+input{
+    width: 50rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: .4rem;
+}
 .button{
     background-color: #f3d564;
     color: white;
@@ -114,7 +125,6 @@ section ul{
 footer{
     text-align: center;
 }
-
 /*teste*/
 
 body{
@@ -124,7 +134,8 @@ body{
 }
 img{
     display: inline-block;
-    width: 50rem;
+    width: 100%;
+    height: 100%;
     vertical-align: middle;
     object-fit: cover;
 }
@@ -133,7 +144,6 @@ section ul li img{
     border-color: white;
     border-radius: .5rem;
 }
-
 ul figure{
     position: relative;
 }
@@ -183,7 +193,7 @@ ul figure:hover figcaption{
     transition: all 0.4s ease-in-out;
 }
 .parent-modale .modale{
-    max-width: 40rem;
+    max-width: 30rem;
     padding: 1rem;
     position: fixed;
     top: 50%;
@@ -228,16 +238,7 @@ ul figure:hover figcaption{
     color: #333;
     cursor: pointer;
 }
-figcaption.desc form input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-figcaption.desc form input{
-    width: 100%;
-    background-color: #f3d564;
-    padding: 1.5rem;
-}
+
 /* reset */
 
 @media screen and (max-width: 50rem){

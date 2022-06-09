@@ -13,6 +13,7 @@
     <header>    
         <img src="./assets/logo_camp_sport_plus-300x300.png" alt="" id="wb">
         <h1>Maison des ligues - tous les sports</h1>
+        <a href="./pages/connexion.php" class="connex"> Connexion </a>
     </header>
     <main>
     <h2 class="ex">Prêt à la compétition ? Remplissez le formulaire proposé dans cette page</h2>
@@ -290,8 +291,8 @@
             <li 
             data-image="./assets/15.jpg" 
             data-title="Joker" 
-            data-description="" 
-            data-dates="02/01/c'est un film épatant, entre action et émotion...2020">
+            data-description="c'est un film épatant, entre action et émotion..." 
+            data-dates="02/01/2020">
                 <figure>
                     <img src="./assets/15.jpg" alt="" >
                         <figcaption>
@@ -326,7 +327,7 @@
     </figure>
 </div>
 
-<a href="./fotmulaire.html" class="button">Cliquez ici pour commencer</a>
+<a href="./pages/inscription.php" class="button">Cliquez ici pour commencer</a>
 </main>
 <footer>@ - areslane - 2022</footer>
 <script src="./js/app.js"></script>
