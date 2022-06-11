@@ -144,6 +144,12 @@ section ul li img{
     border-color: white;
     border-radius: .5rem;
 }
+a.delPanier{
+  background-color: #f3d564;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
 ul figure{
     position: relative;
 }
